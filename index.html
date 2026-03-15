@@ -18,12 +18,13 @@ font-size:24px;
 }
 button{
 padding:15px 25px;
-margin:10px;
+margin:15px;
 font-size:18px;
 border:none;
 background:#0a58ca;
 color:white;
-border-radius:8px;
+border-radius:10px;
+width:200px;
 }
 </style>
 </head>
@@ -34,13 +35,28 @@ border-radius:8px;
 
 <h2>Welcome Students</h2>
 
-<button onclick="alert('Notes section coming soon')">Notes</button>
+<button onclick="openNotes()">Notes</button>
+<button onclick="openVideos()">Videos</button>
+<button onclick="openTest()">Test Series</button>
+<button onclick="openContact()">Contact</button>
 
-<button onclick="alert('Video lectures coming soon')">Videos</button>
+<script>
+function openNotes(){
+window.open("https://example.com/notes.pdf");
+}
 
-<button onclick="alert('Test series coming soon')">Test Series</button>
+function openVideos(){
+window.open("https://youtube.com");
+}
 
-<button onclick="alert('Contact: 0000000000')">Contact</button>
+function openTest(){
+window.open("https://google.com");
+}
+
+function openContact(){
+window.open("https://wa.me/919876543210");
+}
+</script>
 
 </body>
 </html>
