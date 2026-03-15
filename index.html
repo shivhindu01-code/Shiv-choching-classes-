@@ -1,32 +1,41 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <title>Shiv Coaching App</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 body{
 font-family: Arial;
-text-align:center;
 background:#f2f2f2;
+text-align:center;
 margin:0;
 }
+
 header{
 background:#0a58ca;
 color:white;
 padding:20px;
-font-size:24px;
+font-size:26px;
 }
+
 button{
-padding:15px 25px;
+width:220px;
+padding:15px;
 margin:15px;
 font-size:18px;
 border:none;
+border-radius:10px;
 background:#0a58ca;
 color:white;
-border-radius:10px;
-width:200px;
+}
+
+button:hover{
+background:#084298;
 }
 </style>
+
 </head>
 
 <body>
@@ -35,27 +44,29 @@ width:200px;
 
 <h2>Welcome Students</h2>
 
-<button onclick="openNotes()">Notes</button>
-<button onclick="openVideos()">Videos</button>
-<button onclick="openTest()">Test Series</button>
-<button onclick="openContact()">Contact</button>
+<button onclick="notes()">Notes</button>
+<button onclick="videos()">Videos</button>
+<button onclick="test()">Test Series</button>
+<button onclick="contact()">Contact</button>
 
 <script>
-function openNotes(){
+
+function notes(){
 window.open("https://example.com/notes.pdf");
 }
 
-function openVideos(){
-window.open("https://youtube.com");
+function videos(){
+window.open("https://www.youtube.com");
 }
 
-function openTest(){
-window.open("https://google.com");
+function test(){
+window.open("https://www.google.com");
 }
 
-function openContact(){
-window.open("https://wa.me/919876543210");
+function contact(){
+window.open("https://wa.me/919001234567");
 }
+
 </script>
 
 </body>
